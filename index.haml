@@ -1,0 +1,100 @@
+.contianer-fluid(style="max-width: 960px; margin-left: auto; margin-right: auto;")
+  .jumbotron
+    %h1.display-3 
+      Christian Wimber
+  %p.lead.text-muted
+    Tinker, Teacher, Coder, Guy
+  %a.btn(href="https://www.freecodecamp.com/tungstenno74")
+    %i.fa.fa-fire
+    FCC
+  %a.btn(href="https://github.com/TungstenNo74")
+    %i.fa.fa-github
+    Github
+    
+  .row
+    .col-sm-4
+      %a.btn.btn-block.btn-secondary(href="#AboutMe")
+        About Me
+    .col-sm-4
+      %a.btn.btn-block.btn-secondary(href="#Portfolio")
+        Portfolio
+    .col-sm-4
+      %a.btn.btn-block.btn-secondary(href="#ContactMe")
+        Contact Me
+        
+  .col-xs-12(style="height:50px")
+  
+  #AboutMe
+    %h1 About Me
+    .row
+      .col-sm-8
+        %p
+          Hi, my name is Christian Wimber.  I am a science teacher at Somonauk High School and I live in Batavia, Illinois with my wife Jill, daugher Blythe, and mutt Rosie.
+        %p
+          I code primarily as a hobby, but here and there I accidently put together something useful.  I find well organized data aesthetically pleasing, and have been known to gaze romantically at spreadsheets.
+        %p 
+          I generally tinker around in javascipt, D3, Google Appscript (useful, that), and I have grand delusions of learning  a "real" language like C# or Elixir (but not Java.  I refuse to even tacitly endorse the Ask Toolbar)
+          
+      .col-sm-4
+        %img.img-responsive(src="https://lh3.googleusercontent.com/-wBlDDyLc0s0/AAAAAAAAAAI/AAAAAAAAfbg/9myDl5_DgN0/photo.jpg")
+    
+
+  #Portfolio
+    %h1 My Stuff
+    .row
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="http://gdurl.com/wLuw")
+        .card-block
+          %h4.card-title Force Directed Graph
+          %p.card-text Well, somehow this got broken, but it used to work and it was pretty awesome.
+          %a.btn.btn-primary Go to my Site
+
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="http://gdurl.com/qhf6")
+        .card-block
+          %h4.card-title D3 Heat Map
+          %p.card-text Data Visualization made with D3.  Part of the FreeCode Camp Data Visualization section.
+          %a.btn.btn-primary(href="https://codepen.io/TungstenNo74/full/WrMzJr/") Go to my Site
+
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="http://gdurl.com/3LQP")
+        .card-block
+          %h4.card-title Test Distribution Visualizer
+          %p.card-text I'm not sure this is useful to anyone else, but it was to me.
+          %a.btn.btn-primary(href="https://codepen.io/TungstenNo74/full/YwvrZz/") Go to my Site
+
+    .row
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Boltzmann-grp.jpg")
+        .card-block
+          %h4.card-title Boltzman Tribute
+          %p.card-text An excuse to play around with React
+          %a.btn.btn-primary(href="https://codepen.io/TungstenNo74/full/zqLJwL/") Go to my Site
+          
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="http://gdurl.com/eqfN")
+        .card-block
+          %h4.card-title Evaluation Rating Chart
+          %p.card-text A quick little D3 chart showing how scores are combined in teacher evaluations
+          %a.btn.btn-primary(href="https://codepen.io/TungstenNo74/full/ONBVwx/") Go to my Site
+      .card.col-xs-4
+        %img.img-responsive.card-img-top(src="http://gdurl.com/fVJG")
+        .card-block
+          %h4.card-title Quote Machine
+          %p.card-text A randome quote machine built for FCC.
+          %a.btn.btn-primary(href="https://codepen.io/TungstenNo74/full/xEXwKZ/") Go to my Site
+  #ContactMe
+    %h1 Contact Me
+    .card
+      .row
+        %form.col-sm-8
+          %input#nameInput(style="width: 100%" type="text" placeholder="Name")
+          %input#emailInput(style="width: 100%" type="text" placeholder="E-Mail")
+          %input#phoneInput(style="width: 100%" type="text" placeholder="Phone Number")
+          %textarea#message(style="width: 100%" placeholder="Message")
+          %button.btn.button-primary.btn-block
+            Submit
+        %p.col-sm-4
+          Feel free to Contact me and say hey.  Not that this form is functional right now, but... hey, what are you going to do.
+      
+
